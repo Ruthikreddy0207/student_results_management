@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .due-subjects {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Result Management</h1>
+        <form action="student1.php" method="post">
+            <label for="studentId">Enter Student ID:</label>
+            <input type="text" id="studentId" name="student_id" required>
+            <br><br>
+            <label for="semester">Select Semester:</label>
+            <select id="semester" name="semester" required>
+                <option value="overall">Overall</option>
+                <?php foreach ($semesters as $semester) { ?>
+                    <option value="<?php echo htmlspecialchars($semester); ?>">Semester <?php echo htmlspecialchars($semester); ?></option>
+                <?php } ?>
+            </select>
+            <br><br>
+            <button type="submit">Get Results</button>
+        </form>
+    </div>
+</body>
+</html>

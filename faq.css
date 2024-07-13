@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.faq-section {
+    margin-bottom: 30px;
+}
+
+.faq-section h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+.faq-item {
+    margin: 20px 0;
+}
+
+.faq-item h3 {
+    color: #333;
+    cursor: pointer;
+}
+
+.faq-item p {
+    display: none;
+    padding-left: 20px;
+    color: #666;
+}
+
+/* Adding hover and toggle effect */
+.faq-item h3:hover {
+    color: #0056b3;
+}
+
+.faq-item.open p {
+    display: block;
+}

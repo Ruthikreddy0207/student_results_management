@@ -1,0 +1,106 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the body */
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 15%;
+}
+
+/* Container styling */
+.admin-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Heading styles */
+.admin-container h2 {
+    text-align: center;
+    margin-top: 80%;
+    color: #333;
+}
+
+.admin-container h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"], 
+form input[type="password"], 
+form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ button {
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #f8f8f8;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Action links */
+table a {
+    color: black;
+}
+table a:hover{
+    color:rgba(0, 149, 255, 0.889)
+}

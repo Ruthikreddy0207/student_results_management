@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Student Result Management System</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-section">
+            <h2>Students</h2>
+            <div class="faq-item">
+                <h3>How can I view my results?</h3>
+                <p>Log in to your student account and navigate to the 'Results' section to view your results.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I download my results?</h3>
+                <p>After viewing your results, you will find an option to download them as a PDF.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What should I do if I forget my password?</h3>
+                <p>Click on the 'Forgot Password' link on the login page and follow the instructions to reset your password.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Admin</h2>
+            <div class="faq-item">
+                <h3>How can I add new users?</h3>
+                <p>Log in to the admin account and navigate to the 'Manage Users' section to add new users.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I edit user credentials?</h3>
+                <p>In the 'Manage Users' section, you can select a user and edit their credentials as required.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I delete a user account?</h3>
+                <p>Yes, you can delete a user account from the 'Manage Users' section in the admin dashboard.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Staff</h2>
+            <div class="faq-item">
+                <h3>How do I upload student results?</h3>
+                <p>Log in to your staff account and navigate to the 'Upload Results' section to upload student results via an Excel sheet.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What format should the Excel sheet be in?</h3>
+                <p>The Excel sheet should contain columns for student ID, name, subject, grade, and semester.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I view uploaded results?</h3>
+                <p>You can view the uploaded results in the 'View Results' section of your staff account.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item h3');
+
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('open');
+            });
+        });
+    });
+</script>

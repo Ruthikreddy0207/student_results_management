@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Module</title>
+</head>
+<body>
+    <h1>Admin Module</h1>
+    <nav>
+        <a href="login.html">Home</a> | 
+        <a href="admin.php?action=addForm">Add User</a>
+    </nav>
+    <div>
+        <?php
+        if (isset($_GET['action']) && $_GET['action'] == 'addForm') {
+            addUserForm();
+        } elseif (isset($_GET['action']) && $_GET['action'] == 'edit') {
+            // Edit form will be displayed here from the editUserForm() function
+        } else {
+            displayUsers($pdo);
+        }
+        ?>
+    </div>
+</body>
+</html>
